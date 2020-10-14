@@ -1,8 +1,13 @@
-# 第3回　関数定義のサンプルプログラム1
-def today_lunch():
-    lunch = ['しょうが焼き定食', 'ロースカツ定食', 'ラーメンと半炒飯', 'レバニラ炒め定食', 'ナポリタンとハンバーグ定食']
-    select = input('数字を入力してください：')
-    index = int(select) % len(lunch)
-    print('今日のランチは')
-    print(lunch[index])
-today_lunch()
+# 第3回　2次元配列のサンプルプログラム
+% matplotlib inline
+import matplotlib.pyplot as plt
+ranking = [
+[12,37,63,88,107,132,157,164,190],
+[25,43,58,58,73,89,107,117,135],
+[0,15,33,52,77,95,110,110,110],
+[16,26,26,36,38,39,45,57,65]
+]
+plt.plot(ranking[0])
+plt.plot(ranking[1])
+plt.plot(ranking[2])
+plt.plot(ranking[3])
